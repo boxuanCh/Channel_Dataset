@@ -1,0 +1,21 @@
+schema_version: 1
+name: 3gpp-8x8-dual-polarized
+element:
+  kind: 3gpp
+  maximum_gain_dbi: 8.0
+  vertical_beamwidth_degrees: 65.0
+  horizontal_beamwidth_degrees: 65.0
+  vertical_sidelobe_attenuation_db: 30.0
+  front_back_attenuation_db: 30.0
+panel:
+  rows: 8
+  columns: 8
+  vertical_spacing_wavelengths: 0.5
+  horizontal_spacing_wavelengths: 0.5
+  polarization_slant_angles_degrees: [-45.0, 45.0]
+array:
+  panel_rows: 1
+  panel_columns: 1
+metadata:
+  source: 3GPP TR 38.901 V16.1.0 clauses 7.1 and 7.3
+  review_status: pending_independent_review

@@ -1,0 +1,16 @@
+schema_version: 1
+standard: 3GPP TR 38.901
+standard_version: 19.2.0
+resource_policy: explicit_checked_aliases
+aliases:
+  cdl_a.yaml: {target: ../v16_1/cdl_a.yaml, target_sha256: 023f7b6d54aafaa22456a96c5e62685dbe193fa5f129316585f9a7c3d2dbc6e6}
+  cdl_b.yaml: {target: ../v16_1/cdl_b.yaml, target_sha256: fb97fda5e1d1e5a0a4ea310d648cee2d8a8e54459dfcd64f62d0e338f132809d}
+  cdl_c.yaml: {target: ../v16_1/cdl_c.yaml, target_sha256: 3071fa6867a699d02ad9eab10ea3285797b5ee2d126d324ae3711a866c6c8e1c}
+  cdl_d.yaml: {target: ../v16_1/cdl_d.yaml, target_sha256: 86205a498d5e9bf41ec05472ae0988ac14c81a61f7eaa40adfbe89ab3b62919f}
+  cdl_e.yaml: {target: ../v16_1/cdl_e.yaml, target_sha256: f297a8d18f58023595846d64060f03d6f7ae78ebd2bc2f8edf21f6856584e34c}
+  scenario_geometry.yaml: {target: ../v16_1/scenario_geometry.yaml, target_sha256: e2788523a20eb82f9c4063b3c2c756589a8e59ada0b28f26ae8ad248f8e2ed1a}
+  scenario_large_scale.yaml: {target: ../v16_1/scenario_large_scale.yaml, target_sha256: c1e52cae0bcc233984794a80648320d70ef9dde140e7217af130c3a9c5c2c067}
+  scenario_rays.yaml: {target: ../v16_1/scenario_rays.yaml, target_sha256: f552cb827626e6d4e99d7150628c72b6af3c333efdad547e02b19d475fe457c0}
+source_url: https://www.3gpp.org/dynareport/38901.htm
+transcription_date: 2026-09-25
+review_status: pending_independent_review

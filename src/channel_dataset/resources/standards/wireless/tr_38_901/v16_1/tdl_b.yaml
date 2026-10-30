@@ -1,0 +1,15 @@
+schema_version: 1
+name: TDL-B
+standard: 3GPP TR 38.901
+standard_version: 16.1.0
+table: 7.7.2-2
+scalable: true
+delays: [0.0000, 0.1072, 0.2155, 0.2095, 0.2870, 0.2986, 0.3752, 0.5055, 0.3681, 0.3697, 0.5700, 0.5283, 1.1021, 1.2756, 1.5474, 1.7842, 2.0169, 2.8294, 3.0219, 3.6187, 4.1067, 4.2790, 4.7834]
+powers_db: [0.0, -2.2, -4.0, -3.2, -9.8, -1.2, -3.4, -5.2, -7.6, -3.0, -8.9, -9.0, -4.8, -5.7, -7.5, -1.9, -7.6, -12.2, -9.8, -11.4, -14.9, -9.2, -11.3]
+component_types: [rayleigh, rayleigh, rayleigh, rayleigh, rayleigh, rayleigh, rayleigh, rayleigh, rayleigh, rayleigh, rayleigh, rayleigh, rayleigh, rayleigh, rayleigh, rayleigh, rayleigh, rayleigh, rayleigh, rayleigh, rayleigh, rayleigh, rayleigh]
+minimum_frequency_hz: 5.0e8
+maximum_frequency_hz: 1.0e11
+maximum_bandwidth_hz: 2.0e9
+source_url: https://www.etsi.org/deliver/etsi_tr/138900_138999/138901/16.01.00_60/tr_138901v160100p.pdf
+transcription_date: 2026-09-23
+review_status: pending_independent_review

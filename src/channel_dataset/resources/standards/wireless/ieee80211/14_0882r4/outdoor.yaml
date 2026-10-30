@@ -1,0 +1,25 @@
+schema_version: 1
+name: tgax_outdoor
+scenarios:
+  outdoor_umi:
+    los_before: {intercept_db: 28.0, distance_coefficient: 22.0, frequency_coefficient: 20.0}
+    los_after: {intercept_db: 7.8, distance_coefficient: 40.0, height_coefficient: -18.0, frequency_coefficient: 2.0}
+    nlos: {intercept_db: 22.7, distance_coefficient: 36.7, frequency_coefficient: 26.0}
+    shadow_std_los_db: 3.0
+    shadow_std_nlos_db: 4.0
+  outdoor_uma:
+    los_before: {intercept_db: 28.0, distance_coefficient: 22.0, frequency_coefficient: 20.0}
+    los_after: {intercept_db: 7.8, distance_coefficient: 40.0, height_coefficient: -18.0, frequency_coefficient: 2.0}
+    nlos: {intercept_db: 161.04, street_width_coefficient: -7.1, building_height_coefficient: 7.5, ap_height_base: 24.37, building_ratio_coefficient: 3.7, distance_base: 43.42, distance_ap_log_coefficient: -3.1, distance_log_offset: -3.0, frequency_coefficient: 20.0, correction_coefficient: 3.2, correction_height_m: 17.625, correction_offset: 4.97, station_height_coefficient: -0.6, station_reference_height_m: 1.5}
+    shadow_std_los_db: 3.0
+    shadow_std_nlos_db: 4.0
+default_street_width_m: 20.0
+default_average_building_height_m: 20.0
+metadata:
+  source_document: IEEE 802.11-14/0882
+  source_revision: r4
+  source_table: Outdoor spatial channel model clauses
+  source_url: https://mentor.ieee.org/802.11/dcn/14/11-14-0882-04-00ax-tgax-channel-model-document.docx
+  units_reviewed: true
+  review_status: pending_independent_review
+  checksum: fac733e013dd5961526c9f4d9126183f794427397bc8e92f8f1569937b24a469

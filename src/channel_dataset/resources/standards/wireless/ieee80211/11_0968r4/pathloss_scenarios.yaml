@@ -1,0 +1,16 @@
+schema_version: 1
+name: tgah_pathloss_scenarios
+scenarios:
+  indoor: {path_loss_exponent: 3.0, shadow_std_db: 4.0}
+  outdoor_macro: {path_loss_exponent: 3.6, shadow_std_db: 6.0}
+  outdoor_pico: {path_loss_exponent: 3.2, shadow_std_db: 5.0}
+  outdoor_hotspot: {path_loss_exponent: 3.0, shadow_std_db: 5.0}
+station_to_station_additional_loss_db: 3.0
+metadata:
+  source_document: IEEE 802.11-11/0968
+  source_revision: r4
+  source_table: Path-loss model clauses and deployment tables
+  source_url: https://mentor.ieee.org/802.11/dcn/11/11-11-0968-04-00ah-channel-model-text.docx
+  units_reviewed: true
+  review_status: pending_independent_review
+  checksum: eb36ac236401858c08997cd1f2dc08d2b353834b33cb505abe9240caabc46c1c

@@ -1,0 +1,18 @@
+{
+  "$schema": "https://json-schema.org/draft/2020-12/schema",
+  "$id": "https://channel-dataset.invalid/schema/tr38811-cdl-v1.schema.json",
+  "title": "3GPP TR 38.811 NTN CDL parameters",
+  "type": "object",
+  "additionalProperties": false,
+  "required": ["profile", "standard_version", "deployment", "environment", "carrier_frequency_hz", "bandwidth_hz", "delay_spread_s", "desired_asa_degrees", "desired_zsa_degrees", "tx_array_profile", "rx_array_profile"],
+  "properties": {
+    "profile": {"enum": ["NTN-CDL-A", "NTN-CDL-B", "NTN-CDL-C", "NTN-CDL-D"]},
+    "standard_version": {"const": "15.4.0"},
+    "deployment": {"enum": ["D1", "D2", "D3", "D4", "D5"]},
+    "environment": {"enum": ["dense_urban", "urban", "suburban", "rural"]},
+    "carrier_frequency_hz": {"type": "number", "exclusiveMinimum": 0}, "bandwidth_hz": {"type": "number", "exclusiveMinimum": 0},
+    "delay_spread_s": {"type": "number", "exclusiveMinimum": 0}, "desired_asa_degrees": {"type": "number", "exclusiveMinimum": 0}, "desired_zsa_degrees": {"type": "number", "exclusiveMinimum": 0},
+    "tx_array_profile": {"type": "string", "minLength": 1}, "rx_array_profile": {"type": "string", "minLength": 1},
+    "k_factor_db": {"type": ["number", "null"]}, "faraday_rotation_rad": {"type": "number"}, "apply_large_scale": {"type": "boolean"}
+  }
+}

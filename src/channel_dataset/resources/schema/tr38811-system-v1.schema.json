@@ -1,0 +1,17 @@
+{
+  "$schema": "https://json-schema.org/draft/2020-12/schema",
+  "$id": "https://channel-dataset.invalid/schema/tr38811-system-v1.schema.json",
+  "title": "3GPP TR 38.811 system-model parameters",
+  "type": "object",
+  "additionalProperties": false,
+  "required": ["standard_version", "deployment", "environment", "carrier_frequency_hz", "bandwidth_hz", "tx_array_profile", "rx_array_profile", "delay_spread_s", "desired_asa_degrees", "desired_zsa_degrees"],
+  "properties": {
+    "standard_version": {"const": "15.4.0"},
+    "deployment": {"enum": ["D1", "D2", "D3", "D4", "D5"]},
+    "environment": {"enum": ["dense_urban", "urban", "suburban", "rural"]},
+    "carrier_frequency_hz": {"type": "number", "exclusiveMinimum": 0}, "bandwidth_hz": {"type": "number", "exclusiveMinimum": 0},
+    "tx_array_profile": {"type": "string", "minLength": 1}, "rx_array_profile": {"type": "string", "minLength": 1},
+    "delay_spread_s": {"type": "number", "exclusiveMinimum": 0}, "desired_asa_degrees": {"type": "number", "exclusiveMinimum": 0}, "desired_zsa_degrees": {"type": "number", "exclusiveMinimum": 0},
+    "spatial_consistency": {"type": "boolean"}, "apply_large_scale": {"type": "boolean"}
+  }
+}

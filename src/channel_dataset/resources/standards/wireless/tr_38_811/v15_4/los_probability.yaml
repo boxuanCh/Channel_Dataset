@@ -1,0 +1,13 @@
+schema_version: 1
+standard: 3GPP TR 38.811
+standard_version: 15.4.0
+table: 6.6.1-1
+units: probability
+source_url: https://www.3gpp.org/ftp/Specs/archive/38_series/38.811/38811-f40.zip
+transcription_date: 2026-09-23
+review_status: pending_independent_review
+elevation_degrees: [10, 20, 30, 40, 50, 60, 70, 80, 90]
+dense_urban: [0.282, 0.331, 0.398, 0.468, 0.537, 0.612, 0.738, 0.820, 0.981]
+urban: [0.246, 0.386, 0.493, 0.613, 0.726, 0.805, 0.919, 0.968, 0.992]
+suburban: [0.782, 0.869, 0.919, 0.929, 0.935, 0.940, 0.949, 0.952, 0.998]
+rural: [0.782, 0.869, 0.919, 0.929, 0.935, 0.940, 0.949, 0.952, 0.998]

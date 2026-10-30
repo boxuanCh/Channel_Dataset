@@ -1,0 +1,7 @@
+schema_version: 1
+family: wireless
+name: rayleigh_block_fading
+extends: package://profiles/wireless/rayleigh_siso.yaml
+parameters:
+  num_rx_antennas: 2
+  num_tx_antennas: 2

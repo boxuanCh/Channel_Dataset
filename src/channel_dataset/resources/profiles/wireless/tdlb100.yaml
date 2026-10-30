@@ -1,0 +1,7 @@
+schema_version: 1
+family: wireless
+name: tdl
+extends: package://profiles/wireless/tdl_base.yaml
+parameters:
+  profile: TDLB100
+  delay_spread_s: null

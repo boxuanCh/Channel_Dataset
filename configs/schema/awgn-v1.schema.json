@@ -1,0 +1,11 @@
+{
+  "$schema": "https://json-schema.org/draft/2020-12/schema",
+  "$id": "https://example.invalid/channel-dataset/awgn-v1.schema.json",
+  "title": "Complex AWGN parameters",
+  "type": "object",
+  "additionalProperties": false,
+  "required": ["noise_variance_linear"],
+  "properties": {
+    "noise_variance_linear": {"type": "number", "minimum": 0}
+  }
+}

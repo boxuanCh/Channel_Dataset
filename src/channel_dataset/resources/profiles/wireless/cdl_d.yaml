@@ -1,0 +1,5 @@
+schema_version: 1
+family: wireless
+name: cdl
+extends: package://profiles/wireless/cdl_base.yaml
+parameters: {profile: CDL-D}

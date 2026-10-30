@@ -1,0 +1,19 @@
+schema_version: 1
+model:
+  family: wireless
+  name: tr38811_tdl
+  parameters:
+    profile: NTN-TDL-A
+    standard_version: 15.4.0
+    deployment: D3
+    environment: rural
+    carrier_frequency_hz: 2000000000.0
+    bandwidth_hz: 20000000.0
+    delay_spread_s: 1.0e-7
+    num_rx_antennas: 1
+    num_tx_antennas: 1
+    num_sinusoids: 32
+    terminal_speed_mps: 1.0
+    k_factor_db: null
+    apply_large_scale: true
+execution: {backend: numpy, precision: double, device: cpu, seed: 38811}

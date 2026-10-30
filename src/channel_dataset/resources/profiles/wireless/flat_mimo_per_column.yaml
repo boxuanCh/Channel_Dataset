@@ -1,0 +1,7 @@
+schema_version: 1
+family: wireless
+name: flat_mimo_fading
+extends: package://profiles/wireless/flat_mimo_uncorrelated.yaml
+parameters:
+  correlation_mode: per_column_receive
+  per_column_rx_correlation_coefficients: [0.2, 0.8]

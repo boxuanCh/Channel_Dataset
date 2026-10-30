@@ -1,0 +1,42 @@
+{
+  "$schema": "https://json-schema.org/draft/2020-12/schema",
+  "$id": "https://example.invalid/channel-dataset/flat-mimo-fading-v1.schema.json",
+  "title": "Flat MIMO fading model parameters",
+  "type": "object",
+  "additionalProperties": false,
+  "required": [
+    "num_rx",
+    "num_rx_antennas",
+    "num_tx",
+    "num_tx_antennas",
+    "average_power_linear",
+    "power_normalization",
+    "correlation_mode",
+    "rx_correlation_coefficient",
+    "tx_correlation_coefficient",
+    "per_column_rx_correlation_coefficients"
+  ],
+  "properties": {
+    "num_rx": {"type": "integer", "minimum": 1},
+    "num_rx_antennas": {"type": "integer", "minimum": 1},
+    "num_tx": {"type": "integer", "minimum": 1},
+    "num_tx_antennas": {"type": "integer", "minimum": 1},
+    "average_power_linear": {"type": "number", "exclusiveMinimum": 0},
+    "power_normalization": {"enum": ["per_coefficient", "per_link"]},
+    "correlation_mode": {"enum": ["none", "kronecker", "per_column_receive"]},
+    "rx_correlation_coefficient": {
+      "type": ["number", "null"],
+      "minimum": -1,
+      "maximum": 1
+    },
+    "tx_correlation_coefficient": {
+      "type": ["number", "null"],
+      "minimum": -1,
+      "maximum": 1
+    },
+    "per_column_rx_correlation_coefficients": {
+      "type": ["array", "null"],
+      "items": {"type": "number", "minimum": -1, "maximum": 1}
+    }
+  }
+}

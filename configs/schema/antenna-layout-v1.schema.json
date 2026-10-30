@@ -1,0 +1,68 @@
+{
+  "$schema": "https://json-schema.org/draft/2020-12/schema",
+  "$id": "https://channel-dataset.dev/schema/antenna-layout-v1.schema.json",
+  "title": "Channel Dataset antenna layout version 1",
+  "type": "object",
+  "additionalProperties": false,
+  "required": ["schema_version", "name", "element", "panel", "array", "metadata"],
+  "properties": {
+    "schema_version": {"const": 1},
+    "name": {"type": "string", "minLength": 1},
+    "element": {
+      "type": "object",
+      "additionalProperties": false,
+      "required": ["kind"],
+      "properties": {
+        "kind": {"enum": ["isotropic", "3gpp"]},
+        "maximum_gain_dbi": {"type": "number"},
+        "vertical_beamwidth_degrees": {"type": "number", "exclusiveMinimum": 0},
+        "horizontal_beamwidth_degrees": {"type": "number", "exclusiveMinimum": 0},
+        "vertical_sidelobe_attenuation_db": {"type": "number", "minimum": 0},
+        "front_back_attenuation_db": {"type": "number", "minimum": 0}
+      }
+    },
+    "panel": {
+      "type": "object",
+      "additionalProperties": false,
+      "required": [
+        "rows",
+        "columns",
+        "vertical_spacing_wavelengths",
+        "horizontal_spacing_wavelengths",
+        "polarization_slant_angles_degrees"
+      ],
+      "properties": {
+        "rows": {"type": "integer", "minimum": 1},
+        "columns": {"type": "integer", "minimum": 1},
+        "vertical_spacing_wavelengths": {"type": "number", "exclusiveMinimum": 0},
+        "horizontal_spacing_wavelengths": {"type": "number", "exclusiveMinimum": 0},
+        "polarization_slant_angles_degrees": {
+          "type": "array",
+          "minItems": 1,
+          "maxItems": 2,
+          "items": {"type": "number"}
+        }
+      }
+    },
+    "array": {
+      "type": "object",
+      "additionalProperties": false,
+      "required": ["panel_rows", "panel_columns"],
+      "properties": {
+        "panel_rows": {"type": "integer", "minimum": 1},
+        "panel_columns": {"type": "integer", "minimum": 1},
+        "vertical_panel_spacing_wavelengths": {"type": "number", "exclusiveMinimum": 0},
+        "horizontal_panel_spacing_wavelengths": {"type": "number", "exclusiveMinimum": 0}
+      }
+    },
+    "metadata": {
+      "type": "object",
+      "additionalProperties": false,
+      "required": ["source", "review_status"],
+      "properties": {
+        "source": {"type": "string", "minLength": 1},
+        "review_status": {"type": "string", "minLength": 1}
+      }
+    }
+  }
+}

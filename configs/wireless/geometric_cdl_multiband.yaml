@@ -1,0 +1,23 @@
+schema_version: 1
+model:
+  family: wireless
+  name: geometric_cdl
+  parameters:
+    standard_version: 19.2.0
+    carrier_frequencies_hz: [3500000000.0, 28000000000.0]
+    initialization_mode: scenario
+    mobility_mode: hybrid
+    num_sinusoids: 300
+    spatial_acf: gaussian_exponential
+    transition_overlap_fraction: 0.5
+    subpath_method: legacy
+    solver_fallback: single_bounce
+    ground_reflection: false
+    delay_reference: excess
+    multiband_correlation: shared_latent
+    diagnostics: summary
+execution:
+  backend: numpy
+  precision: double
+  device: cpu
+  seed: 12345

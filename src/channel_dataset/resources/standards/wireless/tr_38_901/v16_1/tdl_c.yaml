@@ -1,0 +1,15 @@
+schema_version: 1
+name: TDL-C
+standard: 3GPP TR 38.901
+standard_version: 16.1.0
+table: 7.7.2-3
+scalable: true
+delays: [0.0, 0.2099, 0.2219, 0.2329, 0.2176, 0.6366, 0.6448, 0.6560, 0.6584, 0.7935, 0.8213, 0.9336, 1.2285, 1.3083, 2.1704, 2.7105, 4.2589, 4.6003, 5.4902, 5.6077, 6.3065, 6.6374, 7.0427, 8.6523]
+powers_db: [-4.4, -1.2, -3.5, -5.2, -2.5, 0.0, -2.2, -3.9, -7.4, -7.1, -10.7, -11.1, -5.1, -6.8, -8.7, -13.2, -13.9, -13.9, -15.8, -17.1, -16.0, -15.7, -21.6, -22.8]
+component_types: [rayleigh, rayleigh, rayleigh, rayleigh, rayleigh, rayleigh, rayleigh, rayleigh, rayleigh, rayleigh, rayleigh, rayleigh, rayleigh, rayleigh, rayleigh, rayleigh, rayleigh, rayleigh, rayleigh, rayleigh, rayleigh, rayleigh, rayleigh, rayleigh]
+minimum_frequency_hz: 5.0e8
+maximum_frequency_hz: 1.0e11
+maximum_bandwidth_hz: 2.0e9
+source_url: https://www.etsi.org/deliver/etsi_tr/138900_138999/138901/16.01.00_60/tr_138901v160100p.pdf
+transcription_date: 2026-09-23
+review_status: pending_independent_review

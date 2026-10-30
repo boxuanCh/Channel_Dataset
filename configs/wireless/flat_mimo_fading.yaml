@@ -1,0 +1,15 @@
+schema_version: 1
+model:
+  family: wireless
+  name: flat_mimo_fading
+  profile: package://profiles/wireless/flat_mimo_kronecker.yaml
+  parameters:
+    average_power_linear: 1.0
+    power_normalization: per_link
+execution:
+  backend: torch
+  precision: single
+  device: cpu
+  seed: 20260923
+metadata:
+  experiment_label: correlated_flat_mimo_example

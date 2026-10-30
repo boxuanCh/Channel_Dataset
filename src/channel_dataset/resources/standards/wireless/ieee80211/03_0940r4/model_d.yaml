@@ -1,0 +1,20 @@
+schema_version: 1
+name: D
+delays_ns: [0, 10, 20, 30, 40, 50, 60, 70, 80, 90, 110, 140, 170, 200, 240, 290, 340, 390]
+rms_delay_spread_ns: 50
+breakpoint_distance_m: 10
+shadow_std_los_db: 3
+shadow_std_nlos_db: 5
+los_k_factor_db: 3
+clusters:
+  - {id: 1, tap_indices: [1, 2, 3, 4, 5, 6, 7, 8, 9, 10, 11, 12, 13, 14, 15, 16], powers_db: [0, -0.9, -1.7, -2.6, -3.5, -4.3, -5.2, -6.1, -6.9, -7.8, -9.0, -11.1, -13.7, -16.3, -19.3, -23.2], aoa_deg: 158.9, aod_deg: 332.1, rx_as_deg: 27.7, tx_as_deg: 27.4}
+  - {id: 2, tap_indices: [11, 12, 13, 14, 15, 16, 17], powers_db: [-6.6, -9.5, -12.1, -14.7, -17.4, -21.9, -25.5], aoa_deg: 320.2, aod_deg: 49.3, rx_as_deg: 31.4, tx_as_deg: 32.1}
+  - {id: 3, tap_indices: [15, 16, 17, 18], powers_db: [-18.8, -23.2, -25.2, -26.7], aoa_deg: 276.1, aod_deg: 275.9, rx_as_deg: 37.4, tx_as_deg: 36.8}
+metadata:
+  source_document: IEEE 802.11-03/940
+  source_revision: r4
+  source_table: Appendix C Model D; Tables I-II
+  source_url: https://mentor.ieee.org/802.11/dcn/03/11-03-0940-04-000n-tgn-channel-models.doc
+  units_reviewed: true
+  review_status: pending_independent_review
+  checksum: d533f76a3f7dd16669f498de8546d4c80fb98154a4e581af3d641c0ee6c4ae36

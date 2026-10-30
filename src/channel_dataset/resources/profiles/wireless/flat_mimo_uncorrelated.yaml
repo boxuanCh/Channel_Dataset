@@ -1,0 +1,14 @@
+schema_version: 1
+family: wireless
+name: flat_mimo_fading
+parameters:
+  num_rx: 1
+  num_rx_antennas: 2
+  num_tx: 1
+  num_tx_antennas: 2
+  average_power_linear: 1.0
+  power_normalization: per_coefficient
+  correlation_mode: none
+  rx_correlation_coefficient: null
+  tx_correlation_coefficient: null
+  per_column_rx_correlation_coefficients: null

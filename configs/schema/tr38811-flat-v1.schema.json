@@ -1,0 +1,21 @@
+{
+  "$schema": "https://json-schema.org/draft/2020-12/schema",
+  "$id": "https://channel-dataset.invalid/schema/tr38811-flat-v1.schema.json",
+  "title": "3GPP TR 38.811 flat LMS parameters",
+  "type": "object",
+  "additionalProperties": false,
+  "required": ["standard_version", "deployment", "environment", "carrier_frequency_hz", "bandwidth_hz", "good_state_probability", "good_direct_mean_db", "good_direct_std_db", "good_multipath_power_db", "bad_direct_mean_db", "bad_direct_std_db", "bad_multipath_power_db"],
+  "properties": {
+    "standard_version": {"const": "15.4.0"},
+    "deployment": {"enum": ["D1", "D2", "D3", "D4", "D5"]},
+    "environment": {"enum": ["dense_urban", "urban", "suburban", "rural"]},
+    "carrier_frequency_hz": {"type": "number", "exclusiveMinimum": 0},
+    "bandwidth_hz": {"type": "number", "exclusiveMinimum": 0},
+    "good_state_probability": {"type": "number", "minimum": 0, "maximum": 1},
+    "good_direct_mean_db": {"type": "number"}, "good_direct_std_db": {"type": "number", "minimum": 0}, "good_multipath_power_db": {"type": "number"},
+    "bad_direct_mean_db": {"type": "number"}, "bad_direct_std_db": {"type": "number", "minimum": 0}, "bad_multipath_power_db": {"type": "number"},
+    "state_mode": {"enum": ["sample", "good", "bad"]},
+    "num_rx_antennas": {"type": "integer", "minimum": 1}, "num_tx_antennas": {"type": "integer", "minimum": 1}, "num_sinusoids": {"type": "integer", "minimum": 1},
+    "terminal_speed_mps": {"type": "number", "minimum": 0}, "apply_large_scale": {"type": "boolean"}
+  }
+}

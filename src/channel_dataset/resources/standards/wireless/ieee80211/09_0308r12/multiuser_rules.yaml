@@ -1,0 +1,15 @@
+schema_version: 1
+name: tgac_multiuser_rules
+maximum_ap_antennas: 8
+maximum_station_antennas: 8
+directions: [downlink, uplink]
+shared_ap_side_covariance: true
+independent_user_fading: true
+metadata:
+  source_document: IEEE 802.11-09/0308
+  source_revision: r12
+  source_table: Multi-user MIMO clauses
+  source_url: https://mentor.ieee.org/802.11/dcn/09/11-09-0308-12-00ac-tgac-channel-model-addendum-document.doc
+  units_reviewed: true
+  review_status: pending_independent_review
+  checksum: cc15a0cd4510fb71644f76ff4153b55b3da37d35db4fb5f21e77434e740a6bfc

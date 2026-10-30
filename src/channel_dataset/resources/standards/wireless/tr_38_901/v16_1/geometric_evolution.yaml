@@ -1,0 +1,28 @@
+schema_version: 1
+standard: 3GPP TR 38.901
+standard_version: 16.1.0
+tables: [7.5-6, 7.5-7, 7.5-8, 7.5-9, 7.5-10, 7.6.3.1-2, 7.6.5-1]
+parameter_order: [lgDS, lgASD, lgASA, SF, K, lgZSA, lgZSD]
+xpr_parameter_class: small_scale_extension
+scenario_stationarity_distance_m:
+  RMa: 50.0
+  UMa: 40.0
+  UMi: 15.0
+  InH: 10.0
+  InF_SL: 10.0
+  InF_DL: 4.0
+  InF_SH: 10.0
+  InF_DH: 4.0
+multiband:
+  policy: shared_latent
+  frequency_correlation_log_ratio_scale: 1.0
+  shared_cluster_identity: true
+spatial_field_basis:
+  algorithm: deterministic_fibonacci_sphere
+  default_sinusoids: 300
+  radial_frequency_range_per_decorrelation_distance: [0.35, 1.65]
+  acf_target: equal_weight_gaussian_exponential
+  normalization: sqrt_2_over_l
+source_url: https://www.etsi.org/deliver/etsi_tr/138900_138999/138901/16.01.00_60/tr_138901v160100p.pdf
+transcription_date: 2026-09-25
+review_status: pending_independent_review

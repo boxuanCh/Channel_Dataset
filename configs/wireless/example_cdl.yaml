@@ -1,0 +1,12 @@
+schema_version: 1
+model:
+  family: wireless
+  name: cdl
+  profile: package://profiles/wireless/cdl_c.yaml
+  parameters:
+    base_station_array_profile: package://profiles/wireless/antenna_isotropic_siso.yaml
+execution:
+  backend: numpy
+  precision: double
+  device: cpu
+  seed: 2026

@@ -1,0 +1,20 @@
+schema_version: 1
+family: wireless
+name: tdl
+parameters:
+  profile: TDL-A
+  standard_version: 16.1.0
+  delay_spread_s: 1.0e-7
+  carrier_frequency_hz: 3.5e+9
+  bandwidth_hz: 1.0e+8
+  speed_mps: 0.0
+  num_rx: 1
+  num_rx_antennas: 1
+  num_tx: 1
+  num_tx_antennas: 1
+  num_sinusoids: 32
+  k_factor_db: null
+  correlation_mode: none
+  rx_correlation_coefficient: null
+  tx_correlation_coefficient: null
+  joint_correlation_matrix: null

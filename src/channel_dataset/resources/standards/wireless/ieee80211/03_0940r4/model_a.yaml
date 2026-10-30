@@ -1,0 +1,18 @@
+schema_version: 1
+name: A
+delays_ns: [0]
+rms_delay_spread_ns: 0
+breakpoint_distance_m: 5
+shadow_std_los_db: 3
+shadow_std_nlos_db: 4
+los_k_factor_db: 0
+clusters:
+  - {id: 1, tap_indices: [1], powers_db: [0], aoa_deg: 45, aod_deg: 45, rx_as_deg: 40, tx_as_deg: 40}
+metadata:
+  source_document: IEEE 802.11-03/940
+  source_revision: r4
+  source_table: Appendix C Model A; Tables I-II
+  source_url: https://mentor.ieee.org/802.11/dcn/03/11-03-0940-04-000n-tgn-channel-models.doc
+  units_reviewed: true
+  review_status: pending_independent_review
+  checksum: 187a13a05b796fbbf166f5cf22af97a599b4446e14c80b2a2b669e83bf1e332b

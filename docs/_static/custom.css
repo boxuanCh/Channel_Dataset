@@ -1,0 +1,20 @@
+/* Keep API signatures readable without allowing the article to become too wide. */
+.bd-main .bd-content .bd-article-container {
+  max-width: 68rem;
+}
+
+html[data-theme="light"] .sig.sig-object {
+  background: #f5f7fa;
+  border-left: 0.2rem solid #3568a8;
+  padding: 0.5rem 0.75rem;
+}
+
+html[data-theme="dark"] .sig.sig-object {
+  background: #20242c;
+  border-left: 0.2rem solid #7ab6ff;
+  padding: 0.5rem 0.75rem;
+}
+
+.autosummary.longtable td:first-child {
+  white-space: normal;
+}

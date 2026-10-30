@@ -1,0 +1,13 @@
+schema_version: 1
+model:
+  family: wireless
+  name: cdl
+  profile: package://profiles/wireless/cdl_c.yaml
+  parameters:
+    base_station_array_profile: package://profiles/wireless/antenna_isotropic_dual.yaml
+    terminal_array_profile: package://profiles/wireless/antenna_isotropic_dual.yaml
+execution:
+  backend: torch
+  precision: single
+  device: cpu
+  seed: 2026

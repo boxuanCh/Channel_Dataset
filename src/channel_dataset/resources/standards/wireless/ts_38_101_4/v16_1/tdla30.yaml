@@ -1,0 +1,15 @@
+schema_version: 1
+name: TDLA30
+standard: 3GPP TS 38.101-4
+standard_version: 16.1.0
+table: B.2.1.1-2 / B.2.1.2-2
+scalable: false
+delays: [0.0, 1.0e-8, 1.5e-8, 2.0e-8, 2.5e-8, 5.0e-8, 6.5e-8, 7.5e-8, 1.05e-7, 1.35e-7, 1.50e-7, 2.90e-7]
+powers_db: [-15.5, 0.0, -5.1, -5.1, -9.6, -8.2, -13.1, -11.5, -11.0, -16.2, -16.6, -26.2]
+component_types: [rayleigh, rayleigh, rayleigh, rayleigh, rayleigh, rayleigh, rayleigh, rayleigh, rayleigh, rayleigh, rayleigh, rayleigh]
+minimum_frequency_hz: 5.0e8
+maximum_frequency_hz: 1.0e11
+maximum_bandwidth_hz: null
+source_url: https://www.etsi.org/deliver/etsi_ts/138100_138199/13810104/16.01.00_60/ts_13810104v160100p.pdf
+transcription_date: 2026-09-23
+review_status: pending_independent_review

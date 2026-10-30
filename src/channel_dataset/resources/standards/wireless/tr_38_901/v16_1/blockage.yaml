@@ -1,0 +1,14 @@
+schema_version: 1
+standard: 3GPP TR 38.901
+standard_version: 16.1.0
+section: 7.6.4
+self_blocking:
+  portrait: {azimuth_center_degrees: 260.0, azimuth_half_width_degrees: 40.0, zenith_center_degrees: 100.0, zenith_half_width_degrees: 30.0, attenuation_db: 30.0}
+  landscape: {azimuth_center_degrees: 260.0, azimuth_half_width_degrees: 80.0, zenith_center_degrees: 100.0, zenith_half_width_degrees: 30.0, attenuation_db: 30.0}
+model_a:
+  portrait: {num_blockers: 4, azimuth_half_width_degrees: 20.0, zenith_center_degrees: 90.0, zenith_half_width_degrees: 15.0, attenuation_db: 20.0}
+  landscape: {num_blockers: 2, azimuth_half_width_degrees: 40.0, zenith_center_degrees: 90.0, zenith_half_width_degrees: 15.0, attenuation_db: 20.0}
+model_b: {default_attenuation_db: 30.0}
+source_url: https://www.etsi.org/deliver/etsi_tr/138900_138999/138901/16.01.00_60/tr_138901v160100p.pdf
+transcription_date: 2026-09-23
+review_status: pending_independent_review

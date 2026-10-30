@@ -1,0 +1,10 @@
+schema_version: 1
+standard: 3GPP TR 38.811
+standard_version: 15.4.0
+release: 15
+source_archive: 38811-f40.zip
+source_url: https://www.3gpp.org/ftp/Specs/archive/38_series/38.811/38811-f40.zip
+source_sha256: fff99141ab5f93fcfbca8321de8c4eb48b98347d01c5be53baf5c782308f37b3
+covered_clauses: ["6.3", "6.4", "6.6", "6.7", "6.8", "6.9", "6.10"]
+transcription_date: 2026-09-23
+review_status: pending_independent_review

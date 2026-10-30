@@ -1,0 +1,9 @@
+schema_version: 1
+family: wireless
+name: rayleigh_block_fading
+parameters:
+  num_rx: 1
+  num_rx_antennas: 1
+  num_tx: 1
+  num_tx_antennas: 1
+  average_power_linear: 1.0

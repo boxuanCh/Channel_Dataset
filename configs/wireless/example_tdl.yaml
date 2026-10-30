@@ -1,0 +1,13 @@
+schema_version: 1
+model:
+  family: wireless
+  name: tdl
+  profile: package://profiles/wireless/tdl_c.yaml
+  parameters:
+    delay_spread_s: 3.0e-7
+    speed_mps: 3.0
+execution:
+  backend: torch
+  precision: single
+  device: cpu
+  seed: 2026

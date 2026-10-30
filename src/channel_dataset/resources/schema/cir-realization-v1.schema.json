@@ -1,0 +1,15 @@
+{
+  "$schema": "https://json-schema.org/draft/2020-12/schema",
+  "$id": "https://channel-dataset.dev/schema/cir-realization-v1.schema.json",
+  "title": "Channel Dataset CIR realization",
+  "type": "object",
+  "additionalProperties": false,
+  "required": ["schema_version", "kind", "axes", "arrays", "metadata"],
+  "properties": {
+    "schema_version": {"const": 1},
+    "kind": {"const": "CIRBatch"},
+    "axes": {"type": "object"},
+    "arrays": {"type": "object"},
+    "metadata": {"type": "object"}
+  }
+}

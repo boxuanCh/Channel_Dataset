@@ -1,0 +1,5 @@
+schema_version: 1
+family: wireless
+name: awgn
+parameters:
+  noise_variance_linear: 1.0

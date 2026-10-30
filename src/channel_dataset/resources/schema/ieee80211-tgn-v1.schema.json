@@ -1,0 +1,21 @@
+{
+  "$schema": "https://json-schema.org/draft/2020-12/schema",
+  "$id": "https://channel-dataset.invalid/schema/ieee80211-tgn-v1.schema.json",
+  "title": "IEEE 802.11 TGn model parameters",
+  "type": "object",
+  "additionalProperties": false,
+  "required": ["profile", "standard_version", "carrier_frequency_hz", "bandwidth_hz", "num_rx", "num_rx_antennas", "num_tx", "num_tx_antennas", "environmental_speed_mps", "num_sinusoids", "spatial_quadrature_order", "rx_antenna_spacing_wavelengths", "tx_antenna_spacing_wavelengths", "line_of_sight", "large_scale_mode", "fluorescent_effect", "moving_vehicle_effect", "normalize_profile_power"],
+  "properties": {
+    "profile": {"enum": ["A", "B", "C", "D", "E", "F"]},
+    "standard_version": {"const": "03/940r4"},
+    "carrier_frequency_hz": {"type": "number", "minimum": 2000000000, "maximum": 6000000000},
+    "bandwidth_hz": {"type": "number", "exclusiveMinimum": 0, "maximum": 40000000},
+    "num_rx": {"type": "integer", "minimum": 1}, "num_rx_antennas": {"type": "integer", "minimum": 1, "maximum": 4},
+    "num_tx": {"type": "integer", "minimum": 1}, "num_tx_antennas": {"type": "integer", "minimum": 1, "maximum": 4},
+    "environmental_speed_mps": {"type": "number", "minimum": 0}, "num_sinusoids": {"type": "integer", "minimum": 1},
+    "spatial_quadrature_order": {"type": "integer", "minimum": 32},
+    "rx_antenna_spacing_wavelengths": {"type": "number", "exclusiveMinimum": 0}, "tx_antenna_spacing_wavelengths": {"type": "number", "exclusiveMinimum": 0},
+    "line_of_sight": {"type": "boolean"}, "large_scale_mode": {"enum": ["none", "path_loss", "path_loss_shadowing"]},
+    "fluorescent_effect": {"type": "boolean"}, "moving_vehicle_effect": {"type": "boolean"}, "normalize_profile_power": {"type": "boolean"}
+  }
+}

@@ -1,0 +1,24 @@
+schema_version: 1
+model:
+  family: wireless
+  name: tr38811_flat
+  parameters:
+    standard_version: 15.4.0
+    deployment: D1
+    environment: suburban
+    carrier_frequency_hz: 20000000000.0
+    bandwidth_hz: 100000000.0
+    good_state_probability: 0.8
+    good_direct_mean_db: -1.0
+    good_direct_std_db: 1.0
+    good_multipath_power_db: -10.0
+    bad_direct_mean_db: -8.0
+    bad_direct_std_db: 3.0
+    bad_multipath_power_db: -5.0
+    state_mode: sample
+    num_rx_antennas: 1
+    num_tx_antennas: 1
+    num_sinusoids: 32
+    terminal_speed_mps: 0.0
+    apply_large_scale: true
+execution: {backend: numpy, precision: double, device: cpu, seed: 38812}

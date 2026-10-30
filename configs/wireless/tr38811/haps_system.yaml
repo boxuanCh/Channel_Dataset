@@ -1,0 +1,18 @@
+schema_version: 1
+model:
+  family: wireless
+  name: tr38811_system
+  parameters:
+    standard_version: 15.4.0
+    deployment: D5
+    environment: urban
+    carrier_frequency_hz: 2000000000.0
+    bandwidth_hz: 20000000.0
+    tx_array_profile: profiles/wireless/antenna_isotropic_siso.yaml
+    rx_array_profile: profiles/wireless/antenna_isotropic_siso.yaml
+    delay_spread_s: 1.0e-7
+    desired_asa_degrees: 10.0
+    desired_zsa_degrees: 5.0
+    spatial_consistency: true
+    apply_large_scale: true
+execution: {backend: numpy, precision: double, device: cpu, seed: 38813}

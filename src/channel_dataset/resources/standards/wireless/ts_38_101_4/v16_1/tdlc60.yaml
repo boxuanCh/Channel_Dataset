@@ -1,0 +1,15 @@
+schema_version: 1
+name: TDLC60
+standard: 3GPP TS 38.101-4
+standard_version: 16.1.0
+table: B.2.1.2-3
+scalable: false
+delays: [0.0, 1.5e-8, 4.0e-8, 5.0e-8, 5.5e-8, 7.5e-8, 8.0e-8, 1.30e-7, 2.10e-7, 3.00e-7, 3.60e-7, 5.20e-7]
+powers_db: [-7.8, -0.3, 0.0, -8.9, -14.5, -8.5, -10.2, -12.1, -13.9, -15.2, -16.9, -19.4]
+component_types: [rayleigh, rayleigh, rayleigh, rayleigh, rayleigh, rayleigh, rayleigh, rayleigh, rayleigh, rayleigh, rayleigh, rayleigh]
+minimum_frequency_hz: 6.0e9
+maximum_frequency_hz: 1.0e11
+maximum_bandwidth_hz: null
+source_url: https://www.etsi.org/deliver/etsi_ts/138100_138199/13810104/16.01.00_60/ts_13810104v160100p.pdf
+transcription_date: 2026-09-23
+review_status: pending_independent_review

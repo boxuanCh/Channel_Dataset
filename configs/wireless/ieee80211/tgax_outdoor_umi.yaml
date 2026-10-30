@@ -1,0 +1,30 @@
+schema_version: 1
+model:
+  family: wireless
+  name: ieee80211_tgax
+  parameters:
+    profile: F
+    standard_version: 14/0882r4
+    carrier_frequency_hz: 5000000000.0
+    bandwidth_hz: 80000000.0
+    num_rx: 1
+    num_rx_antennas: 2
+    num_tx: 1
+    num_tx_antennas: 4
+    environmental_speed_mps: 0.8333333333333334
+    num_sinusoids: 64
+    spatial_quadrature_order: 256
+    rx_antenna_spacing_wavelengths: 0.5
+    tx_antenna_spacing_wavelengths: 0.5
+    line_of_sight: false
+    large_scale_mode: path_loss_shadowing
+    fluorescent_effect: false
+    moving_vehicle_effect: false
+    normalize_profile_power: true
+    scenario: outdoor_umi
+    wall_count: 0
+    floor_count: 0
+    fast_object_effect: true
+    street_width_m: 20.0
+    average_building_height_m: 20.0
+execution: {backend: numpy, precision: double, device: cpu, seed: 20260923}

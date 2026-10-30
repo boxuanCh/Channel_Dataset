@@ -1,0 +1,14 @@
+schema_version: 1
+model:
+  family: wireless
+  name: awgn
+  profile: package://profiles/wireless/awgn_unit_variance.yaml
+  parameters:
+    noise_variance_linear: 0.1
+execution:
+  backend: torch
+  precision: single
+  device: cpu
+  seed: 20260923
+metadata:
+  experiment_label: flat_mimo_awgn_example

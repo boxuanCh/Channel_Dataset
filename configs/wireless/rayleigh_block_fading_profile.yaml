@@ -1,0 +1,14 @@
+schema_version: 1
+model:
+  family: wireless
+  name: rayleigh_block_fading
+  profile: package://profiles/wireless/rayleigh_2x2.yaml
+  parameters:
+    average_power_linear: 0.5
+execution:
+  backend: torch
+  precision: single
+  device: cpu
+  seed: 20260923
+metadata:
+  experiment_label: packaged_profile_example

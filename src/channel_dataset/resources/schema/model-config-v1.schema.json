@@ -1,0 +1,38 @@
+{
+  "$schema": "https://json-schema.org/draft/2020-12/schema",
+  "$id": "https://example.invalid/channel-dataset/model-config-v1.schema.json",
+  "title": "Channel model configuration envelope, version 1",
+  "type": "object",
+  "additionalProperties": false,
+  "required": ["schema_version", "model"],
+  "properties": {
+    "schema_version": {"const": 1},
+    "model": {
+      "type": "object",
+      "additionalProperties": false,
+      "required": ["family", "name"],
+      "anyOf": [
+        {"required": ["parameters"]},
+        {"required": ["profile"]}
+      ],
+      "properties": {
+        "family": {"type": "string", "minLength": 1},
+        "name": {"type": "string", "minLength": 1},
+        "parameters": {"type": "object"},
+        "profile": {"type": "string", "minLength": 1}
+      }
+    },
+    "execution": {
+      "type": "object",
+      "additionalProperties": false,
+      "required": ["backend", "precision", "device", "seed"],
+      "properties": {
+        "backend": {"enum": ["torch", "numpy"]},
+        "precision": {"enum": ["single", "double"]},
+        "device": {"type": "string", "minLength": 1},
+        "seed": {"type": "integer", "minimum": 0}
+      }
+    },
+    "metadata": {"type": "object"}
+  }
+}

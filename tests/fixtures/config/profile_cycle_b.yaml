@@ -1,0 +1,5 @@
+schema_version: 1
+family: fixture
+name: cyclic_model
+extends: file:profile_cycle_a.yaml
+parameters: {}

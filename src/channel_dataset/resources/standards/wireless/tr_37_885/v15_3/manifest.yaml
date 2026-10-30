@@ -1,0 +1,14 @@
+schema_version: 1
+standard: 3GPP TR 37.885
+standard_version: 15.3.0
+release: 15
+archive: 37885-f30.zip
+source_url: https://www.3gpp.org/ftp/Specs/archive/37_series/37.885/37885-f30.zip
+source_sha256: 9ba942558275626524015d8c444d57ee36a46092c3e674a85480c9872b4fe5dc
+partner_pdf_url: https://atisorg.s3.amazonaws.com/archive/3gpp-documents/Rel15/ATIS.3GPP.37.885.V1530.pdf
+related_sources:
+  - {standard: 3GPP TR 36.885, version: 14.0.0, purpose: shadowing spatial correlation}
+  - {standard: 3GPP TR 38.901, release: 15, purpose: referenced channel-generation procedure}
+  - {change_request: 0006, purpose: V2X antenna model and pathloss correction}
+transcription_date: 2026-09-24
+review_status: pending_independent_review

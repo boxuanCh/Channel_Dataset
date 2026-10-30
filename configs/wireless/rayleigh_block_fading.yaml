@@ -1,0 +1,17 @@
+schema_version: 1
+model:
+  family: wireless
+  name: rayleigh_block_fading
+  parameters:
+    num_rx: 1
+    num_rx_antennas: 2
+    num_tx: 1
+    num_tx_antennas: 2
+    average_power_linear: 1.0
+execution:
+  backend: torch
+  precision: single
+  device: cpu
+  seed: 20260923
+metadata:
+  experiment_label: seeded_rayleigh_ofdm_example

@@ -1,0 +1,19 @@
+schema_version: 1
+name: C
+delays_ns: [0, 10, 20, 30, 40, 50, 60, 70, 80, 90, 110, 140, 170, 200]
+rms_delay_spread_ns: 30
+breakpoint_distance_m: 5
+shadow_std_los_db: 3
+shadow_std_nlos_db: 5
+los_k_factor_db: 0
+clusters:
+  - {id: 1, tap_indices: [1, 2, 3, 4, 5, 6, 7, 8, 9, 10], powers_db: [0, -2.1, -4.3, -6.5, -8.6, -10.8, -13.0, -15.2, -17.3, -19.5], aoa_deg: 290.3, aod_deg: 13.5, rx_as_deg: 24.6, tx_as_deg: 24.7}
+  - {id: 2, tap_indices: [7, 8, 9, 10, 11, 12, 13, 14], powers_db: [-5.0, -7.2, -9.3, -11.5, -13.7, -15.8, -18.0, -20.2], aoa_deg: 332.3, aod_deg: 56.4, rx_as_deg: 22.4, tx_as_deg: 22.5}
+metadata:
+  source_document: IEEE 802.11-03/940
+  source_revision: r4
+  source_table: Appendix C Model C; Tables I-II
+  source_url: https://mentor.ieee.org/802.11/dcn/03/11-03-0940-04-000n-tgn-channel-models.doc
+  units_reviewed: true
+  review_status: pending_independent_review
+  checksum: da3c0a10d69ffc41e6640ea39c394158754031658fbd9655316a53d4c1313c44

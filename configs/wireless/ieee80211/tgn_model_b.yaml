@@ -1,0 +1,24 @@
+schema_version: 1
+model:
+  family: wireless
+  name: ieee80211_tgn
+  parameters:
+    profile: B
+    standard_version: 03/940r4
+    carrier_frequency_hz: 5250000000.0
+    bandwidth_hz: 20000000.0
+    num_rx: 1
+    num_rx_antennas: 2
+    num_tx: 1
+    num_tx_antennas: 2
+    environmental_speed_mps: 0.3333333333333333
+    num_sinusoids: 64
+    spatial_quadrature_order: 256
+    rx_antenna_spacing_wavelengths: 0.5
+    tx_antenna_spacing_wavelengths: 0.5
+    line_of_sight: false
+    large_scale_mode: none
+    fluorescent_effect: false
+    moving_vehicle_effect: false
+    normalize_profile_power: true
+execution: {backend: numpy, precision: double, device: cpu, seed: 20260923}

@@ -1,0 +1,13 @@
+schema_version: 1
+standard: 3GPP TR 38.811
+standard_version: 15.4.0
+table: 6.10.1-1
+source_url: https://www.3gpp.org/ftp/Specs/archive/38_series/38.811/38811-f40.zip
+transcription_date: 2026-09-23
+review_status: pending_independent_review
+deployments:
+  D1: {platform: geo, altitude_min_m: 35786000, altitude_max_m: 35786000, band: ka, frequency_min_hz: 19700000000, frequency_max_hz: 30000000000, maximum_bandwidth_hz: 800000000, o2i: false, atmosphere: mandatory, scintillation: tropospheric, link_model: flat}
+  D2: {platform: geo, altitude_min_m: 35786000, altitude_max_m: 35786000, band: s, frequency_min_hz: 1980000000, frequency_max_hz: 2200000000, maximum_bandwidth_hz: 20000000, o2i: false, atmosphere: negligible, scintillation: ionospheric, link_model: frequency_selective}
+  D3: {platform: ngso, altitude_min_m: 600000, altitude_max_m: 20000000, band: s, frequency_min_hz: 1980000000, frequency_max_hz: 2200000000, maximum_bandwidth_hz: 20000000, o2i: false, atmosphere: negligible, scintillation: ionospheric, link_model: frequency_selective}
+  D4: {platform: ngso, altitude_min_m: 600000, altitude_max_m: 20000000, band: ka, frequency_min_hz: 19700000000, frequency_max_hz: 30000000000, maximum_bandwidth_hz: 800000000, o2i: false, atmosphere: mandatory, scintillation: tropospheric, link_model: flat}
+  D5: {platform: haps, altitude_min_m: 8000, altitude_max_m: 50000, band: sub6, frequency_min_hz: 500000000, frequency_max_hz: 6000000000, maximum_bandwidth_hz: 80000000, o2i: true, atmosphere: negligible, scintillation: negligible, link_model: frequency_selective}

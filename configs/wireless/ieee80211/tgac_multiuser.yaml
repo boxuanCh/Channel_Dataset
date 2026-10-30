@@ -1,0 +1,26 @@
+schema_version: 1
+model:
+  family: wireless
+  name: ieee80211_tgac
+  parameters:
+    profile: D
+    standard_version: 09/0308r12
+    carrier_frequency_hz: 5250000000.0
+    bandwidth_hz: 160000000.0
+    num_rx: 2
+    num_rx_antennas: 2
+    num_tx: 1
+    num_tx_antennas: 8
+    environmental_speed_mps: 0.3333333333333333
+    num_sinusoids: 64
+    spatial_quadrature_order: 256
+    rx_antenna_spacing_wavelengths: 0.5
+    tx_antenna_spacing_wavelengths: 0.5
+    line_of_sight: false
+    large_scale_mode: none
+    fluorescent_effect: false
+    moving_vehicle_effect: false
+    normalize_profile_power: true
+    num_users: 2
+    direction: downlink
+execution: {backend: numpy, precision: double, device: cpu, seed: 20260923}

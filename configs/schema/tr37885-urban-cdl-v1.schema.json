@@ -1,0 +1,18 @@
+{
+  "$schema": "https://json-schema.org/draft/2020-12/schema",
+  "$id": "https://channel-dataset.invalid/schema/tr37885-urban-cdl-v1.schema.json",
+  "title": "3GPP TR 37.885 urban fixed-CDL parameters",
+  "type": "object",
+  "additionalProperties": false,
+  "properties": {
+    "standard_version": {"const": "15.3.0"},
+    "carrier_frequency_hz": {"type": "number", "exclusiveMinimum": 0},
+    "bandwidth_hz": {"type": "number", "exclusiveMinimum": 0},
+    "num_rx_antennas": {"type": "integer", "minimum": 1},
+    "num_tx_antennas": {"type": "integer", "minimum": 1},
+    "apply_path_loss": {"type": "boolean"},
+    "apply_shadow_fading": {"type": "boolean"},
+    "apply_vehicle_blockage": {"type": "boolean"},
+    "moving_scatterers": {"type": "boolean"}
+  }
+}

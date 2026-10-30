@@ -1,0 +1,17 @@
+schema_version: 1
+name: isotropic-dual
+element:
+  kind: isotropic
+  maximum_gain_dbi: 0.0
+panel:
+  rows: 1
+  columns: 1
+  vertical_spacing_wavelengths: 0.5
+  horizontal_spacing_wavelengths: 0.5
+  polarization_slant_angles_degrees: [-45.0, 45.0]
+array:
+  panel_rows: 1
+  panel_columns: 1
+metadata:
+  source: Channel Dataset ideal dual-polarization reference
+  review_status: reviewed

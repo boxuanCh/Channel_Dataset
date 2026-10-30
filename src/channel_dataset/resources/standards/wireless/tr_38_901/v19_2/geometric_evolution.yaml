@@ -1,0 +1,15 @@
+schema_version: 1
+standard: 3GPP TR 38.901
+standard_version: 19.2.0
+inherits_engine_parameters_from: ../v16_1/geometric_evolution.yaml
+scenario_variants: [RMa, UMa, UMi, InH_Mixed, InH_Open, InF_SL, InF_DL, InF_SH, InF_DH]
+multiband:
+  policy: shared_latent
+  shared_cluster_identity: true
+spatial_field_basis:
+  algorithm: deterministic_fibonacci_sphere
+  default_sinusoids: 300
+  radial_frequency_range_per_decorrelation_distance: [0.35, 1.65]
+source_url: https://www.3gpp.org/dynareport/38901.htm
+transcription_date: 2026-09-25
+review_status: pending_independent_review

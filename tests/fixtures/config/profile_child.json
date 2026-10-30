@@ -1,0 +1,10 @@
+{
+  "schema_version": 1,
+  "family": "fixture",
+  "name": "nested_model",
+  "extends": "file:profile_base.yaml",
+  "parameters": {
+    "nested": {"right": "child"},
+    "sequence": [3]
+  }
+}

@@ -1,0 +1,12 @@
+schema_version: 1
+name: tgac_bandwidth_rules
+bandwidth_hz: [20000000, 40000000, 80000000, 160000000]
+delay_reduction_factors: [1, 1, 2, 4]
+metadata:
+  source_document: IEEE 802.11-09/0308
+  source_revision: r12
+  source_table: Section 2, Table 1
+  source_url: https://mentor.ieee.org/802.11/dcn/09/11-09-0308-12-00ac-tgac-channel-model-addendum-document.doc
+  units_reviewed: true
+  review_status: pending_independent_review
+  checksum: 4853058696221d2b6f5a312d7fcafa689e5fdc622ec9a0056ccb4e44eb78dde9

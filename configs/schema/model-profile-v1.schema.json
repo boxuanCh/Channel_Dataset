@@ -1,0 +1,15 @@
+{
+  "$schema": "https://json-schema.org/draft/2020-12/schema",
+  "$id": "https://example.invalid/channel-dataset/model-profile-v1.schema.json",
+  "title": "Channel model parameter profile, version 1",
+  "type": "object",
+  "additionalProperties": false,
+  "required": ["schema_version", "family", "name", "parameters"],
+  "properties": {
+    "schema_version": {"const": 1},
+    "family": {"type": "string", "minLength": 1},
+    "name": {"type": "string", "minLength": 1},
+    "extends": {"type": "string", "minLength": 1},
+    "parameters": {"type": "object"}
+  }
+}

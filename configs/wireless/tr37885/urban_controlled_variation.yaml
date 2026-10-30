@@ -1,0 +1,16 @@
+schema_version: 1
+model:
+  family: wireless
+  name: tr37885_urban_system
+  parameters:
+    standard_version: 15.3.0
+    carrier_frequency_hz: 5900000000.0
+    bandwidth_hz: 20000000.0
+    num_rx_antennas: 1
+    num_tx_antennas: 1
+    apply_path_loss: true
+    apply_shadow_fading: true
+    apply_vehicle_blockage: true
+    moving_scatterers: true
+execution: {backend: numpy, precision: double, device: cpu, seed: 37886}
+metadata: {scene_mode: controlled_variation, standard_baseline: false}

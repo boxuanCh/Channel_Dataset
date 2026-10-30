@@ -1,0 +1,62 @@
+schema_version: 1
+standard: 3GPP TR 38.901
+standard_version: 16.1.0
+tables: [7.4.1-1, 7.4.2-1, 7.5-6, 7.5-7, 7.5-8, 7.5-9, 7.5-10]
+parameter_order: [lgDS, lgASD, lgASA, SF, K, lgZSA, lgZSD]
+scenarios:
+  UMi:
+    los_probability_model: umi
+    pathloss_model: umi
+    shadow_std_los_db: 4.0
+    shadow_std_nlos_db: 7.82
+    o2i_loss_db: 20.0
+    los: {means: [-7.14, 1.21, 1.73, 0.0, 9.0, 0.73, 0.50], stddevs: [0.38, 0.41, 0.28, 4.0, 5.0, 0.34, 0.35]}
+    nlos: {means: [-6.83, 1.53, 1.81, 0.0, 0.0, 0.92, 0.60], stddevs: [0.28, 0.33, 0.30, 7.82, 0.0, 0.16, 0.40]}
+    spatial_correlation_distances_m: [7, 8, 8, 10, 15, 12, 12]
+  UMa:
+    los_probability_model: uma
+    pathloss_model: uma
+    shadow_std_los_db: 4.0
+    shadow_std_nlos_db: 6.0
+    o2i_loss_db: 20.0
+    los: {means: [-7.49, 1.25, 1.76, 0.0, 9.0, 0.95, 0.70], stddevs: [0.54, 0.42, 0.16, 4.0, 3.5, 0.16, 0.35]}
+    nlos: {means: [-7.43, 1.60, 1.81, 0.0, 0.0, 0.95, 0.70], stddevs: [0.48, 0.28, 0.20, 6.0, 0.0, 0.16, 0.35]}
+    spatial_correlation_distances_m: [30, 18, 15, 37, 12, 15, 15]
+  RMa:
+    los_probability_model: rma
+    pathloss_model: rma
+    shadow_std_los_db: 4.0
+    shadow_std_nlos_db: 8.0
+    o2i_loss_db: 20.0
+    los: {means: [-7.49, 0.90, 1.52, 0.0, 7.0, 0.47, 0.34], stddevs: [0.55, 0.38, 0.24, 4.0, 4.0, 0.40, 0.40]}
+    nlos: {means: [-7.43, 0.95, 1.52, 0.0, 0.0, 0.58, 0.49], stddevs: [0.48, 0.45, 0.13, 8.0, 0.0, 0.37, 0.40]}
+    spatial_correlation_distances_m: [50, 25, 35, 37, 40, 15, 15]
+  InH:
+    los_probability_model: inh_mixed
+    pathloss_model: inh
+    shadow_std_los_db: 3.0
+    shadow_std_nlos_db: 8.03
+    o2i_loss_db: 0.0
+    los: {means: [-7.69, 1.60, 1.62, 0.0, 7.0, 1.10, 1.00], stddevs: [0.18, 0.18, 0.22, 3.0, 4.0, 0.16, 0.25]}
+    nlos: {means: [-7.17, 1.62, 1.76, 0.0, 0.0, 1.05, 1.10], stddevs: [0.38, 0.25, 0.16, 8.03, 0.0, 0.10, 0.25]}
+    spatial_correlation_distances_m: [8, 7, 8, 10, 4, 4, 4]
+  InF:
+    los_probability_model: inf
+    pathloss_model: inf_sl
+    shadow_std_los_db: 4.3
+    shadow_std_nlos_db: 5.7
+    o2i_loss_db: 0.0
+    los: {means: [-7.22, 1.56, 1.66, 0.0, 7.0, 1.10, 1.00], stddevs: [0.12, 0.25, 0.18, 4.3, 8.0, 0.16, 0.25]}
+    nlos: {means: [-7.12, 1.60, 1.70, 0.0, 0.0, 1.08, 1.08], stddevs: [0.30, 0.32, 0.25, 5.7, 0.0, 0.20, 0.30]}
+    spatial_correlation_distances_m: [10, 10, 10, 10, 10, 10, 10]
+cross_correlation_matrix:
+  - [1.0, 0.1, 0.1, -0.1, 0.1, 0.1, 0.1]
+  - [0.1, 1.0, 0.1, -0.1, 0.1, 0.1, 0.1]
+  - [0.1, 0.1, 1.0, -0.1, 0.1, 0.1, 0.1]
+  - [-0.1, -0.1, -0.1, 1.0, -0.1, -0.1, -0.1]
+  - [0.1, 0.1, 0.1, -0.1, 1.0, 0.1, 0.1]
+  - [0.1, 0.1, 0.1, -0.1, 0.1, 1.0, 0.1]
+  - [0.1, 0.1, 0.1, -0.1, 0.1, 0.1, 1.0]
+source_url: https://www.etsi.org/deliver/etsi_tr/138900_138999/138901/16.01.00_60/tr_138901v160100p.pdf
+transcription_date: 2026-09-23
+review_status: pending_independent_review

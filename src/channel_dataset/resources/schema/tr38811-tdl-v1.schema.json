@@ -1,0 +1,23 @@
+{
+  "$schema": "https://json-schema.org/draft/2020-12/schema",
+  "$id": "https://channel-dataset.invalid/schema/tr38811-tdl-v1.schema.json",
+  "title": "3GPP TR 38.811 NTN TDL parameters",
+  "type": "object",
+  "additionalProperties": false,
+  "required": ["profile", "standard_version", "deployment", "environment", "carrier_frequency_hz", "bandwidth_hz", "delay_spread_s", "num_rx_antennas", "num_tx_antennas"],
+  "properties": {
+    "profile": {"enum": ["NTN-TDL-A", "NTN-TDL-B", "NTN-TDL-C", "NTN-TDL-D"]},
+    "standard_version": {"const": "15.4.0"},
+    "deployment": {"enum": ["D1", "D2", "D3", "D4", "D5"]},
+    "environment": {"enum": ["dense_urban", "urban", "suburban", "rural"]},
+    "carrier_frequency_hz": {"type": "number", "exclusiveMinimum": 0},
+    "bandwidth_hz": {"type": "number", "exclusiveMinimum": 0},
+    "delay_spread_s": {"type": "number", "exclusiveMinimum": 0},
+    "num_rx_antennas": {"type": "integer", "minimum": 1},
+    "num_tx_antennas": {"type": "integer", "minimum": 1},
+    "num_sinusoids": {"type": "integer", "minimum": 1},
+    "terminal_speed_mps": {"type": "number", "minimum": 0},
+    "k_factor_db": {"type": ["number", "null"]},
+    "apply_large_scale": {"type": "boolean"}
+  }
+}

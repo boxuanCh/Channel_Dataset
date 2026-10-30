@@ -1,0 +1,38 @@
+{
+  "$schema": "https://json-schema.org/draft/2020-12/schema",
+  "$id": "https://channel-dataset.local/schema/geometric-cdl-v1.schema.json",
+  "title": "Geometric CDL parameters",
+  "type": "object",
+  "additionalProperties": false,
+  "required": ["standard_version", "carrier_frequencies_hz"],
+  "properties": {
+    "standard_version": {"enum": ["16.1.0", "19.2.0"]},
+    "carrier_frequencies_hz": {
+      "type": "array", "minItems": 1, "uniqueItems": true,
+      "items": {"type": "number", "exclusiveMinimum": 0}
+    },
+    "initialization_mode": {"enum": ["scenario", "fixed_profile"]},
+    "fixed_profile": {"type": ["string", "null"], "enum": ["CDL-A", "CDL-B", "CDL-C", "CDL-D", "CDL-E", null]},
+    "mobility_mode": {"enum": ["hybrid", "drift_only", "spatial_consistency_only"]},
+    "num_sinusoids": {"type": "integer", "minimum": 1},
+    "spatial_acf": {"enum": ["gaussian_exponential", "exponential", "gaussian"]},
+    "automatic_segmentation": {"type": "boolean"},
+    "stationarity_distance_m": {"type": ["number", "null"], "exclusiveMinimum": 0},
+    "transition_overlap_fraction": {"type": "number", "minimum": 0, "maximum": 1},
+    "subpath_method": {"enum": ["legacy", "laplacian"]},
+    "rays_per_cluster": {"type": "integer", "minimum": 1},
+    "solver_tolerance": {"type": "number", "exclusiveMinimum": 0},
+    "solver_max_iterations": {"type": "integer", "minimum": 1},
+    "solver_fallback": {"enum": ["single_bounce", "strict", "mask"]},
+    "minimum_bounce_separation_m": {"type": "number", "minimum": 0},
+    "ground_reflection": {"type": "boolean"},
+    "delay_reference": {"const": "excess"},
+    "multiband_correlation": {"enum": ["shared_latent", "independent"]},
+    "apply_path_loss": {"type": ["boolean", "null"]},
+    "apply_shadow_fading": {"type": ["boolean", "null"]},
+    "diagnostics": {"enum": ["none", "summary", "full"]},
+    "trajectory_chunk_size": {"type": "integer", "minimum": 1},
+    "tx_array_profile": {"type": "string", "minLength": 1},
+    "rx_array_profile": {"type": "string", "minLength": 1}
+  }
+}

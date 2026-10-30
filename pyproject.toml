@@ -1,0 +1,115 @@
+[build-system]
+requires = ["setuptools>=77"]
+build-backend = "setuptools.build_meta"
+
+[project]
+name = "channel-dataset"
+version = "0.1.0"
+description = "Extensible physical-layer communication channel models"
+readme = "README.md"
+requires-python = ">=3.11,<3.15"
+authors = [{ name = "Channel Dataset contributors" }]
+keywords = ["channel-model", "wireless", "mimo", "ofdm", "3gpp", "ieee-80211"]
+classifiers = [
+    "Development Status :: 3 - Alpha",
+    "Intended Audience :: Science/Research",
+    "Operating System :: OS Independent",
+    "Programming Language :: Python :: 3",
+    "Programming Language :: Python :: 3 :: Only",
+    "Programming Language :: Python :: 3.11",
+    "Programming Language :: Python :: 3.12",
+    "Programming Language :: Python :: 3.13",
+    "Programming Language :: Python :: 3.14",
+    "Topic :: Scientific/Engineering",
+]
+license = "Apache-2.0"
+license-files = ["LICENSE"]
+dependencies = [
+    "numpy>=1.26,<3",
+    "PyYAML>=6.0",
+]
+
+[project.optional-dependencies]
+wireless-numpy = [
+    "numpy>=1.26,<3",
+]
+wireless-torch = [
+    "torch>=2,<3",
+]
+wireless = [
+    "numpy>=1.26,<3",
+    "torch>=2,<3",
+]
+test = [
+    "jsonschema>=4,<5",
+    "pytest>=8,<9",
+]
+dev = [
+    "build>=1,<2",
+    "jsonschema>=4,<5",
+    "pytest>=8,<9",
+    "ruff>=0.6",
+    "twine>=6,<7",
+]
+docs = [
+    "sphinx>=8,<10",
+    "myst-parser>=4,<5",
+    "pydata-sphinx-theme>=0.16,<1",
+]
+notebooks = [
+    "torch>=2,<3",
+    "jupyterlab>=4,<5",
+    "ipykernel>=6,<8",
+    "matplotlib>=3.8,<4",
+    "nbclient>=0.10,<1",
+    "nbformat>=5,<6",
+]
+
+[tool.setuptools.packages.find]
+where = ["src"]
+
+[tool.setuptools.package-data]
+"channel_dataset" = ["py.typed"]
+"channel_dataset.resources" = [
+    "profiles/wireless/*.yaml",
+    "schema/*.json",
+    "standards/wireless/tr_38_901/v16_1/*.yaml",
+    "standards/wireless/tr_38_901/v19_2/*.yaml",
+    "standards/wireless/ts_38_101_4/v16_1/*.yaml",
+    "standards/wireless/ieee80211/**/*.yaml",
+    "standards/wireless/tr_38_811/v15_4/*.yaml",
+    "standards/wireless/tr_37_885/v15_3/*.yaml",
+]
+
+[tool.pytest.ini_options]
+testpaths = ["tests"]
+addopts = "-q"
+markers = [
+    "torch: tests requiring the optional PyTorch backend",
+    "numpy: tests specific to the NumPy backend",
+    "cuda: tests requiring a CUDA-capable PyTorch installation",
+    "statistical: seeded statistical validation",
+    "geometric_cdl: geometrically consistent CDL evolution tests",
+    "slow: tests excluded from the default fast suite",
+    "reference: comparisons with external or published references",
+    "performance: opt-in performance benchmarks",
+    "ieee80211: IEEE 802.11 WLAN channel model tests",
+    "tgn: IEEE 802.11 TGn channel model tests",
+    "tgac: IEEE 802.11 TGac channel model tests",
+    "tgah: IEEE 802.11 TGah channel model tests",
+    "tgax: IEEE 802.11 TGax channel model tests",
+    "ntn: non-terrestrial network channel model tests",
+    "tr38811: 3GPP TR 38.811 channel model tests",
+    "satellite: satellite channel model tests",
+    "haps: high-altitude platform station channel model tests",
+    "atmosphere: atmospheric propagation tests",
+    "calibration: standard calibration scenario tests",
+    "v2x: Vehicle-to-Everything channel model tests",
+    "tr37885: 3GPP TR 37.885 channel model tests",
+    "urban_grid: standardized urban-grid scene tests",
+    "mobility: time-indexed mobility tests",
+]
+
+[tool.ruff]
+line-length = 100
+target-version = "py311"

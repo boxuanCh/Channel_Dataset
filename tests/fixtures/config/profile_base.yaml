@@ -1,0 +1,9 @@
+schema_version: 1
+family: fixture
+name: nested_model
+parameters:
+  scalar: 1
+  nested:
+    left: inherited
+    right: base
+  sequence: [1, 2]

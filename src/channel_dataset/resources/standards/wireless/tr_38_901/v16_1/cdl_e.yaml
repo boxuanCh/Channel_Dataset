@@ -1,0 +1,20 @@
+schema_version: 1
+name: CDL-E
+standard: 3GPP TR 38.901
+standard_version: 16.1.0
+table: 7.7.1-5
+delays: [0, 0.5133, 0.5440, 0.5630, 0.5440, 0.7112, 1.9092, 1.9293, 1.9589, 2.6426, 3.7136, 5.4524, 12.0034, 20.6419]
+powers_db: [-22.03, -15.8, -18.1, -19.8, -22.9, -22.4, -18.6, -20.8, -22.6, -22.3, -25.6, -20.2, -29.8, -29.2]
+aod_degrees: [0, 57.5, 57.5, 57.5, -20.1, 16.2, 9.3, 9.3, 9.3, 19, 32.7, 0.5, 55.9, 57.6]
+aoa_degrees: [-180, 18.2, 18.2, 18.2, 101.8, 112.9, -155.5, -155.5, -155.5, -143.3, -94.7, 147, -36.2, -26]
+zod_degrees: [99.6, 104.2, 104.2, 104.2, 99.4, 100.8, 98.8, 98.8, 98.8, 100.8, 96.4, 98.9, 95.6, 104.6]
+zoa_degrees: [80.4, 80.4, 80.4, 80.4, 80.8, 86.3, 82.7, 82.7, 82.7, 82.9, 88, 81, 88.6, 78.3]
+cluster_spreads_degrees: {asd: 5, asa: 11, zsd: 3, zsa: 7}
+xpr_db: 8
+specular_power_db: -0.03
+minimum_frequency_hz: 5.0e+8
+maximum_frequency_hz: 1.0e+11
+maximum_bandwidth_hz: 2.0e+9
+source_url: https://www.etsi.org/deliver/etsi_tr/138900_138999/138901/16.01.00_60/tr_138901v160100p.pdf
+transcription_date: 2026-09-23
+review_status: pending_independent_review

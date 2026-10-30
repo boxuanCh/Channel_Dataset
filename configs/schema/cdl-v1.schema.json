@@ -1,0 +1,25 @@
+{
+  "$schema": "https://json-schema.org/draft/2020-12/schema",
+  "$id": "https://channel-dataset.dev/schema/cdl-v1.schema.json",
+  "title": "3GPP CDL model parameters version 1",
+  "type": "object",
+  "additionalProperties": false,
+  "required": ["profile", "standard_version", "delay_spread_s", "carrier_frequency_hz", "bandwidth_hz", "link_direction", "base_station_array_profile", "terminal_array_profile", "base_station_orientation_rad", "terminal_orientation_rad", "base_station_velocity_mps", "terminal_velocity_mps", "link_distance_m", "k_factor_db"],
+  "properties": {
+    "profile": {"enum": ["CDL-A", "CDL-B", "CDL-C", "CDL-D", "CDL-E"]},
+    "standard_version": {"const": "16.1.0"},
+    "delay_spread_s": {"type": "number", "exclusiveMinimum": 0},
+    "carrier_frequency_hz": {"type": "number", "exclusiveMinimum": 0},
+    "bandwidth_hz": {"type": "number", "exclusiveMinimum": 0},
+    "link_direction": {"enum": ["downlink", "uplink"]},
+    "base_station_array_profile": {"type": "string", "minLength": 1},
+    "terminal_array_profile": {"type": "string", "minLength": 1},
+    "base_station_orientation_rad": {"$ref": "#/$defs/vector3"},
+    "terminal_orientation_rad": {"$ref": "#/$defs/vector3"},
+    "base_station_velocity_mps": {"$ref": "#/$defs/vector3"},
+    "terminal_velocity_mps": {"$ref": "#/$defs/vector3"},
+    "link_distance_m": {"type": "number", "exclusiveMinimum": 0},
+    "k_factor_db": {"type": ["number", "null"]}
+  },
+  "$defs": {"vector3": {"type": "array", "minItems": 3, "maxItems": 3, "items": {"type": "number"}}}
+}

@@ -1,0 +1,23 @@
+schema_version: 1
+name: F
+delays_ns: [0, 10, 20, 30, 50, 80, 110, 140, 180, 230, 280, 330, 400, 490, 600, 730, 880, 1050]
+rms_delay_spread_ns: 150
+breakpoint_distance_m: 30
+shadow_std_los_db: 3
+shadow_std_nlos_db: 6
+los_k_factor_db: 6
+clusters:
+  - {id: 1, tap_indices: [1, 2, 3, 4, 5, 6, 7, 8, 9, 10, 11, 12, 13, 14, 15], powers_db: [-3.3, -3.6, -3.9, -4.2, -4.6, -5.3, -6.2, -7.1, -8.2, -9.5, -11.0, -12.5, -14.3, -16.7, -19.9], aoa_deg: 315.1, aod_deg: 56.2, rx_as_deg: 48.0, tx_as_deg: 41.6}
+  - {id: 2, tap_indices: [5, 6, 7, 8, 9, 10, 11, 12, 13, 14, 15, 16], powers_db: [-1.8, -2.8, -3.5, -4.4, -5.3, -7.4, -7.0, -10.3, -10.4, -13.8, -15.7, -19.9], aoa_deg: 180.4, aod_deg: 183.7, rx_as_deg: 55.0, tx_as_deg: 55.2}
+  - {id: 3, tap_indices: [9, 10, 11, 12, 13, 14, 15], powers_db: [-5.7, -6.7, -10.4, -9.6, -14.1, -12.7, -18.5], aoa_deg: 74.7, aod_deg: 153.0, rx_as_deg: 42.0, tx_as_deg: 47.4}
+  - {id: 4, tap_indices: [13, 14, 15], powers_db: [-8.8, -13.3, -18.7], aoa_deg: 251.5, aod_deg: 112.5, rx_as_deg: 28.6, tx_as_deg: 27.2}
+  - {id: 5, tap_indices: [15, 16], powers_db: [-12.9, -14.2], aoa_deg: 68.5, aod_deg: 291.0, rx_as_deg: 30.7, tx_as_deg: 33.0}
+  - {id: 6, tap_indices: [17, 18], powers_db: [-16.3, -21.2], aoa_deg: 246.2, aod_deg: 62.3, rx_as_deg: 38.2, tx_as_deg: 38.0}
+metadata:
+  source_document: IEEE 802.11-03/940
+  source_revision: r4
+  source_table: Appendix C Model F; Tables I-II
+  source_url: https://mentor.ieee.org/802.11/dcn/03/11-03-0940-04-000n-tgn-channel-models.doc
+  units_reviewed: true
+  review_status: pending_independent_review
+  checksum: 6b24c392cbecc76b8eb99062688b632a0ca9bd6549432467ede3bc4ec314068b

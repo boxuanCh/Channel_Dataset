@@ -1,0 +1,18 @@
+schema_version: 1
+name: NTN-CDL-A
+standard: 3GPP TR 38.811
+standard_version: 15.4.0
+table: 6.9.1-1
+reference_elevation_degrees: 50
+delays: [0, 1.0811, 2.8416]
+powers_db: [0, -4.675, -6.482]
+aod_degrees: [0, 0, 0]
+aoa_degrees: [178.8, -115.7, 111.5]
+zod_degrees: [140, 140, 140]
+zoa_degrees: [35.6, 22.9, 127.4]
+cluster_spreads_degrees: {asd: 0, asa: 15, zsd: 0, zsa: 7}
+xpr_db: 10
+specular_power_db: null
+source_url: https://www.3gpp.org/ftp/Specs/archive/38_series/38.811/38811-f40.zip
+transcription_date: 2026-09-23
+review_status: pending_independent_review

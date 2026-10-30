@@ -1,0 +1,15 @@
+schema_version: 1
+name: tgax_indoor
+scenarios:
+  indoor_residential: {breakpoint_distance_m: 5.0, wall_loss_db: 5.0}
+  indoor_enterprise: {breakpoint_distance_m: 10.0, wall_loss_db: 7.0}
+floor_loss_coefficient_db: 18.3
+floor_loss_exponent_offset: 0.46
+metadata:
+  source_document: IEEE 802.11-14/0882
+  source_revision: r4
+  source_table: Section 2.1 and indoor path-loss clauses
+  source_url: https://mentor.ieee.org/802.11/dcn/14/11-14-0882-04-00ax-tgax-channel-model-document.docx
+  units_reviewed: true
+  review_status: pending_independent_review
+  checksum: 57e4c341d74bf97c8f55954c486999c5896a195d6b6433112a33c90bc950846c
