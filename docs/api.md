@@ -288,6 +288,7 @@ scales every `[batch, rx, tx]` link independently to the requested mean squared
 coefficient magnitude. Normalization is never implicit in conversion or signal
 application. AWGN remains a separate operation.
 
+(api-3gpp-tdl)=
 ## 3GPP tapped-delay-line models
 
 `TappedDelayLine` supports the scalable TDL-A through TDL-E profiles from

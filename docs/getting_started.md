@@ -90,7 +90,7 @@ random samples are not promised to be bit-identical across backends.
 | --- | --- |
 | Learn all tensor and operator contracts | [Python API](api.md) |
 | Check the supported release boundary | [Capabilities](capabilities.md) |
-| Use 3GPP TDL/CDL and system scenarios | [Python API](api.md#3gpp-tapped-delay-line-models) |
+| Use 3GPP TDL/CDL and system scenarios | {ref}`Python API <api-3gpp-tdl>` |
 | Use IEEE 802.11 WLAN models | [WLAN models](ieee80211_models.md) |
 | Use satellite or HAPS channels | [TR 38.811 NTN](tr38811_models.md) |
 | Use urban vehicle-to-vehicle channels | [TR 37.885 V2X](tr37885_models.md) |
